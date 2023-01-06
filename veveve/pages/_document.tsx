@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+<<<<<<< Updated upstream
+        <p> Hej</p>
+=======
+>>>>>>> Stashed changes
         <Main />
         <NextScript />
       </body>
