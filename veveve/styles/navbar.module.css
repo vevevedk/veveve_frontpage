@@ -1,0 +1,24 @@
+.Navbar {
+  width: 100%;
+  z-index: 10000000;
+  position: fixed;
+  top: 0;
+  background-color: none;
+}
+.Navbar li {
+  display: block;
+  float: right;
+}
+
+.burger {
+  background-color: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .Navbar li {
+    display: inline;
+  }
+}

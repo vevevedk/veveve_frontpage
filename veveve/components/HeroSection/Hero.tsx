@@ -9,7 +9,7 @@ const Hero: React.FC<hero> = ({ title }) => {
     <div className={style.hero_section}>
       <div className={style.overlay}>
         <video className={style.hero_video} autoPlay loop muted>
-          <source src="../video/SiinDesign.mp4" type="video/mp4" />
+          <source src="../video/Siin_Design.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={style.hero_text}>
