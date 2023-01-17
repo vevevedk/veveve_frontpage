@@ -6,7 +6,7 @@
 *.mp4
 
 # dependencies
-/node_modules
+*/node_modules
 /.pnp
 .pnp.js
 
@@ -14,8 +14,8 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+.next/
+out/
 
 # production
 /build
