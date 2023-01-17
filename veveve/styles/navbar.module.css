@@ -1,0 +1,55 @@
+.nav {
+  background: var(--blue);
+  display: flex;
+}
+.logo {
+  width: 100%;
+}
+
+.lastlink {
+  color: var(--orange);
+}
+
+/* Default state of the links when menu is closed */
+.links {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+/* State of the links when menu is open */
+.links.open {
+  display: none;
+}
+
+.menuButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: var(--Orange);
+}
+
+/* Media query for switching to burger menu */
+@media (min-width: 500px) {
+  .links {
+    flex-direction: row;
+  }
+
+  .menuButton {
+    display: none;
+  }
+  .links.open {
+    display: block;
+  }
+}
