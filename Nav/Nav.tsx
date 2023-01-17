@@ -10,7 +10,7 @@ const MobileNav: React.FC<Props> = ({ links }) => {
 
   return (
     <nav className={styles.nav}>
-      <img src="path/to/logo.png" alt="Logo" className={styles.logo} />
+      <img src="path/to/logo" alt="Logo" className={styles.logo} />
       <ul className={`${styles.links} ${isOpen ? styles.open : ""}`}>
         {links.map((link, index) => (
           <li
