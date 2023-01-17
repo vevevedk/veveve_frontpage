@@ -24,3 +24,29 @@ p {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
 }
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000000;
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: white
+}
