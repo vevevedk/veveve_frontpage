@@ -3,6 +3,14 @@ import Head from "next/head";
 import Hero from "../components/HeroSection/Hero";
 import Nav from "../components/Nav/Nav";
 
+const links = [
+  { id: "link1", name: "Link 1", url: "#link1" },
+  { id: "link2", name: "Link 2", url: "#link2" },
+  { id: "link3", name: "Link 3", url: "#link3" },
+  { id: "link4", name: "Link 4", url: "#link4" },
+  { id: "link5", name: "Link 5", url: "#link5" },
+];
+
 export default function Home() {
   return (
     <>
@@ -12,7 +20,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
+      <Nav links={links} />
       <Hero title="jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
     </>
   );

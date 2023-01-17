@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from "react";
-import style from "../../styles/navbar.module.css";
-interface Props {}
 
-interface Link {
-  id: string;
-  name: string;
-  url: string;
+interface Props {
+  links: { id: string; name: string; url: string }[];
 }
 
-const links: Link[] = [
-  { id: "link1", name: "Link 1", url: "#link1" },
-  { id: "link2", name: "Link 2", url: "#link2" },
-  { id: "link3", name: "Link 3", url: "#link3" },
-  { id: "link4", name: "Link 4", url: "#link4" },
-  { id: "link5", name: "Link 5", url: "#link5" },
-];
-
-const MobileNav: React.FC<Props> = () => {
+const MobileNav: React.FC<Props> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -29,18 +17,18 @@ const MobileNav: React.FC<Props> = () => {
   }, []);
 
   return (
-    <nav className={style.Navbar}>
+    <nav>
       {width < 500 ? (
         <>
-          <button className={style.burger} onClick={() => setIsOpen(!isOpen)}>
+          <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Close" : "Menu"}
           </button>
           {isOpen && (
             <ul>
-              {links.map((link) => (
-                <li key={link.id}>
-                  <a className="link" href={link.url}>
-                    {link.name}
+              {links.map(({ id, name, url }) => (
+                <li key={id}>
+                  <a className="link" href={url}>
+                    {name}
                   </a>
                 </li>
               ))}
@@ -48,11 +36,12 @@ const MobileNav: React.FC<Props> = () => {
           )}
         </>
       ) : (
+        // Mobil
         <ul>
-          {links.map((link) => (
-            <li key={link.id}>
-              <a className="link" href={link.url}>
-                {link.name}
+          {links.map(({ id, name, url }) => (
+            <li key={id}>
+              <a className="link" href={url}>
+                {name}
               </a>
             </li>
           ))}
