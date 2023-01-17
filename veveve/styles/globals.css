@@ -3,6 +3,7 @@
   --blue: #004658;
   --white: #f2f2f2;
   --black: #252525;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -31,6 +32,19 @@ nav {
   right: 0;
   z-index: 1000000;
 
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 a {
