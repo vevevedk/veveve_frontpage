@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import VeVeVeLogo from "../../public/images/logo.svg";
-import Style from "../../styles/footer.module.css";
+import Style from './controller/Footer.module.css'
 import FooterInfo from "./controller/FooterInfo";
 
 export default function Footer() {
