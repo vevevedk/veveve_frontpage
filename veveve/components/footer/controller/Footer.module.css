@@ -1,16 +1,19 @@
 .Footer {
   background-color: var(--blue);
-  color: var(--white);
+  background-image: url("../../../public/images/backgroundpattern.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 125vw;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .Info {
   color: var(--white);
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .FooterInfo {
@@ -21,5 +24,39 @@
   color: var(--white);
 }
 .Logo img {
-  max-width: 100px;
+  padding: 50px 0 50px 0;
+  max-width: 80vw;
+}
+
+@media screen and (min-width: 750px) {
+  .Info {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+  }
+  .Info {
+    font-size: 1rem;
+  }
+  .Logo img {
+    padding: 100px 0 100px 0;
+    max-width: 80vw;
+  }
+  .FooterInfo {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Info {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+  }
+  .Logo img {
+    padding: 100px 0 100px 0;
+    max-width: 80vw;
+  }
+  .FooterInfo {
+    padding-bottom: 100px;
+  }
 }
