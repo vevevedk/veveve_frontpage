@@ -1,22 +1,25 @@
-.footer {
+.Footer {
   background-color: var(--blue);
   color: var(--white);
   width: 100vw;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
 }
 
-.info {
+.Info {
   color: var(--white);
-  padding-bottom: 50px;
   text-align: center;
 }
 
-.footerInfo h1 {
+.FooterInfo {
+  padding-bottom: 50px;
+}
+
+.FooterInfo h1 {
   color: var(--white);
 }
-.logo img {
+.Logo img {
   max-width: 100px;
 }

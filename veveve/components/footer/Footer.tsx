@@ -6,11 +6,11 @@ import FooterInfo from "./controller/FooterInfo";
 
 export default function Footer() {
   return (
-    <div className={Style.footer}>
-      <div className={Style.logo}>
+    <div className={Style.Footer}>
+      <div className={Style.Logo}>
         <Image src={VeVeVeLogo} alt="Logo of VeVeVe" />
       </div>
-      <div className={Style.info}>
+      <div className={Style.Info}>
         <FooterInfo
           Line1="Christian D Xs Vej 173"
           Line2="8270 Højbjerg"
