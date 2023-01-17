@@ -1,4 +1,4 @@
-import Style from "../../../styles/footer.module.css";
+import Style from "./Footer.module.css";
 
 interface Footer {
   Line1: string;
