@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import styles from "../../styles/navbar.module.css";
 
 interface Props {
   links: { id: string; name: string; url: string }[];
@@ -6,47 +7,25 @@ interface Props {
 
 const MobileNav: React.FC<Props> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
-    <nav>
-      {width < 500 ? (
-        <>
-          <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Close" : "Menu"}
-          </button>
-          {isOpen && (
-            <ul>
-              {links.map(({ id, name, url }) => (
-                <li key={id}>
-                  <a className="link" href={url}>
-                    {name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </>
-      ) : (
-        // Mobil
-        <ul>
-          {links.map(({ id, name, url }) => (
-            <li key={id}>
-              <a className="link" href={url}>
-                {name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
+    <nav className={styles.nav}>
+      <img src="path/to/logo.png" alt="Logo" className={styles.logo} />
+      <ul className={`${styles.links} ${isOpen ? styles.open : ""}`}>
+        {links.map((link, index) => (
+          <li
+            key={link.id}
+            className={index === links.length - 1 ? styles.lastLink : "link"}
+          >
+            <a href={link.url} className={styles.link}>
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <button className={styles.menuButton} onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? "☰" : "✖"}
+      </button>
     </nav>
   );
 };
