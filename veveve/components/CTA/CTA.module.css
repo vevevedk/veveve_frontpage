@@ -26,6 +26,26 @@
   color: var(--blue);
 }
 
-.container {
-  width: fit-content;
+.ModalBody {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 98;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.ModalContent {
+  position: relative;
+  z-index: 99;
+  max-width: 20rem;
+  max-height: 100%;
 }
