@@ -1,22 +1,50 @@
 import style from "../../styles/HeroSection.module.css";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-interface hero {
+interface HeroProps {
   title: string;
 }
-const Hero: React.FC<hero> = ({ title }) => {
+
+const Hero = (props: HeroProps) => {
+  const [videoUrl, setVideoUrl] = useState("");
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    setVideoUrl(
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/Untitled.mp4"
+    );
+  }, []);
+
+  useEffect(() => {
+    function handleVisibilityChange() {
+      if (videoRef.current) {
+        if (document.visibilityState === "hidden") {
+          videoRef.current.pause();
+        } else {
+          videoRef.current.play();
+        }
+      }
+    }
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [videoRef]);
+
   return (
     <div className={style.hero_section}>
       <div className={style.overlay}>
-        <video className={style.hero_video} autoPlay loop muted>
-          <source
-            src="https://veveve-bucket.fra1.digitaloceanspaces.com/Siin_Design.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <video
+          ref={videoRef}
+          className={style.hero_video}
+          loop
+          autoPlay
+          muted
+          src={videoUrl}
+        ></video>
       </div>
       <div className={style.hero_text}>
-        <h2>&quot;{title}&quot;</h2>
+        <h2>&quot;{props.title}&quot;</h2>
       </div>
     </div>
   );
