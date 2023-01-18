@@ -1,0 +1,31 @@
+.blue,
+.orange,
+.white {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  margin: 50px 0;
+  text-align: center;
+  display: flex;
+}
+
+.blue h1,
+.orange h1,
+.white h1 {
+  font-size: 30px;
+  margin: 10px 50px;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.white {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.container {
+  width: fit-content;
+}

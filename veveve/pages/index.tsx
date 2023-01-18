@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import Hero from "../components/HeroSection/Hero";
 import Nav from "../components/Nav/Nav";
 import { LinkingModel } from "../components/model/LinkModel";
+import CTAButton, { stil, tekst } from "../components/CTA/CTA";
 
 const Links: LinkingModel[] = [
   new LinkingModel("1", "cases", "#cases"),
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Nav links={Links} />
       <Hero title="jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
+      <CTAButton stil={stil.blue} tekst={tekst.kontakt} />
       <Footer />
     </>
   );
