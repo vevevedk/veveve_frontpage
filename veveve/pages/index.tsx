@@ -24,6 +24,7 @@ export default function Home() {
       <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
       <PopUpTest></PopUpTest>
       <Footer />
+      <PopUpTest></PopUpTest>
     </>
   );
 }

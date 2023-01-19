@@ -25,27 +25,38 @@
   background-color: var(--white);
   color: var(--blue);
 }
-/* din position er ikke korrekt, den vil sende det op til toppen af skærmen når du er scrolled op */
+.Modal_Container {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--black);
+  justify-content: space-around;
+  display: flex;
+}
+
 .ModalBody {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
+  margin: auto auto;
+  top: 25%;
+  left: 25%;
   justify-content: center;
   z-index: 98;
-  height: 50%;
-  width: 50%;
-  margin: auto;
   border-radius: 4px;
   background-color: white;
+  width: 50vw;
 }
 
 .ModalContent {
-  position: relative;
   z-index: 99;
-  max-width: 20rem;
   max-height: 100%;
+  margin: 100px;
+}
+
+.Card {
+  width: 20vw;
+  height: 50vh;
+  background-color: var(--white);
+}
+
+.CardContent {
 }
