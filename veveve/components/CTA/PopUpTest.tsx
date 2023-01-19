@@ -31,20 +31,17 @@ export default function PopUpTest() {
       <div className={styles.Card}>
         <div className={styles.CardContent}></div>
 
-        <h1>PopUpTest</h1>
-        <CTAButton stil={stil.blue} tekst={tekst.tryk_ik_mig} popup={test} />
+        <CTAButton stil={stil.blue} tekst={tekst.kontakt} popup={test} />
       </div>
       <div className={styles.Card}>
         <div className={styles.CardContent}></div>
 
-        <h1>PopUpTest</h1>
-        <CTAButton stil={stil.blue} tekst={tekst.tryk_ik_mig} popup={test1} />
+        <CTAButton stil={stil.blue} tekst={tekst.kontakt} popup={test1} />
       </div>
       <div className={styles.Card}>
         <div className={styles.CardContent}></div>
 
-        <h1>PopUpTest</h1>
-        <CTAButton stil={stil.blue} tekst={tekst.tryk_ik_mig} popup={test2} />
+        <CTAButton stil={stil.blue} tekst={tekst.kontakt} popup={test2} />
       </div>
     </div>
   );

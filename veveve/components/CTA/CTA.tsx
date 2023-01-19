@@ -12,7 +12,6 @@ export enum stil {
   white = "white",
 }
 export enum tekst {
-  tryk_ik_mig = "Tryk ik på mig",
   kontakt = "kontakt",
 }
 
