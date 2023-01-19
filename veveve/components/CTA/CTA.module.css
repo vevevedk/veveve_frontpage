@@ -25,7 +25,7 @@
   background-color: var(--white);
   color: var(--blue);
 }
-
+/* din position er ikke korrekt, den vil sende det op til toppen af skærmen når du er scrolled op */
 .ModalBody {
   position: absolute;
   top: 0;

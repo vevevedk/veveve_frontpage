@@ -6,11 +6,14 @@ interface CTA {
   tekst: tekst;
   popup: ReactElement;
 }
+
+//De her skal ind i kontroller
 export enum stil {
   blue = "blue",
   orange = "orange",
   white = "white",
 }
+//kontroller
 export enum tekst {
   tryk_ik_mig = "Tryk ik på mig",
   kontakt = "kontakt",

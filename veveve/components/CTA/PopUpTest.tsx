@@ -1,6 +1,6 @@
 import React from "react";
 import CTAButton, { stil, tekst } from "./CTA";
-
+//elsker din test const... :P SÅ ved man du har været i gang
 export default function PopUpTest() {
   const test = (
     <div>
