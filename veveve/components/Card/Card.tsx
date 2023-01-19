@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-
+import style from "../../styles/CardsStyle.module.css";
 interface CardProps {
-  name: string;
-  age: number;
   id: number;
   title: string;
-  text: string;
-  extra: string;
+  description: string;
+  extra?: string;
 }
 
 const MyComponent: React.FC = () => {
@@ -15,21 +13,20 @@ const MyComponent: React.FC = () => {
   useEffect(() => {
     fetch("http://localhost:3000/api/CardData")
       .then((res) => res.json())
-      .then((data) => setCards(data.cards))
+      .then((data) => setCards(data))
       .catch((err) => console.error(err));
   }, []);
 
   return (
-    <>
+    <div className={style.CardContainer}>
       {cards.map((card) => (
         <div key={card.id}>
-          <h1>{card.name}</h1>
           <h2>{card.title}</h2>
-          <p>{card.text}</p>
-          <p> {card.extra}</p>
+          <p>{card.description}</p>
+          <p>{card.extra}</p>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

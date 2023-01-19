@@ -1,25 +1,30 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
-class Data {
-  cards: {
-    name: string;
-    age: number;
-  }[];
-  constructor(cards: { name: string; age: number }[]) {
-    this.cards = cards;
+class CardData {
+  id: number;
+  title: string;
+  description: string;
+  extra?: string;
+  constructor(id: number, title: string, description: string, extra?: string) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.extra = extra;
   }
 }
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<CardData[]>
 ) {
-  const cards = [
-    { name: "John Doe", age: 11 },
-    { name: "Jane Smith", age: 11 },
-    { name: "Bob Johnson", age: 11 },
+  let cards: CardData[] = [
+    new CardData(1, "John Doe", "BLABLA", "HER ER EKSTRA"),
+    new CardData(2, "Jane Smith", "MEREBLABLA"),
+    new CardData(3, "Bob Johnson", "FORMEGETBLABLA"),
+    new CardData(4, "Bob Johnson", "FORMEGETBLABLA"),
+    new CardData(5, "Bob Johnson", "FORMEGETBLABLA"),
   ];
 
-  res.status(200).json(new Data(cards));
+  res.status(200).json(cards);
 }
