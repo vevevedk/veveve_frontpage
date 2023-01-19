@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 interface CardProps {
+  name: string;
+  age: number;
   id: number;
   title: string;
   text: string;
@@ -21,6 +23,7 @@ const MyComponent: React.FC = () => {
     <>
       {cards.map((card) => (
         <div key={card.id}>
+          <h1>{card.name}</h1>
           <h2>{card.title}</h2>
           <p>{card.text}</p>
           <p> {card.extra}</p>

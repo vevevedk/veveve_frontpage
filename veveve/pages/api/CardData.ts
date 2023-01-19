@@ -1,12 +1,15 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type Data = {
+class Data {
   cards: {
     name: string;
     age: number;
   }[];
-};
+  constructor(cards: { name: string; age: number }[]) {
+    this.cards = cards;
+  }
+}
 
 export default function handler(
   req: NextApiRequest,
@@ -18,5 +21,5 @@ export default function handler(
     { name: "Bob Johnson", age: 11 },
   ];
 
-  res.status(200).json({ cards });
+  res.status(200).json(new Data(cards));
 }
