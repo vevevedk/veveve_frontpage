@@ -1,5 +1,5 @@
 :root {
-  --Orange: #ff9101;
+  --orange: #ff9101;
   --blue: #004658;
   --white: #f2f2f2;
   --black: #252525;
@@ -39,7 +39,7 @@ h2,
 h3 {
   font-family: "Segoe UI", sans-serif;
   font-variant: small-caps;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 p {
