@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "../../styles/CardsStyle.module.css";
 import { CardData } from "../model/CardDataModel";
-interface CardProps {
-  id: number;
-  title: string;
-  description: string;
-  extra?: string;
-  Url?: string | null;
-}
 
 const MyComponent: React.FC = () => {
   const [cards, setCards] = useState<CardData[]>([]);
