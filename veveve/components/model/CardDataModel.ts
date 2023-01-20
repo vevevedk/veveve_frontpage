@@ -1,20 +1,20 @@
 export class CardData {
   id: number;
   title: string;
+  url: string;
   description: string;
   extra?: string;
-  Url?: string;
   constructor(
     id: number,
     title: string,
+    url: string,
     description: string,
-    extra?: string,
-    Url?: string
+    extra?: string
   ) {
     this.id = id;
     this.title = title;
+    this.url = url;
     this.description = description;
     this.extra = extra;
-    this.Url = Url;
   }
 }

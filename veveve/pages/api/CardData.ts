@@ -10,39 +10,39 @@ export default function handler(
     new CardData(
       1,
       "John Doe",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/dice.png",
       "BLABLA",
       "HER ER EKSTRasd asdasd asd asda sd asd ak km m iopm oim oimA"
     ),
     new CardData(
       2,
       "Jane Smith",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
       "MEREBLABLA",
       "Jaad asd asdma soidmoasm domsadoasmdo msado imaaa"
     ),
     new CardData(
       3,
       "Bob Johnson",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
       "FORMEGETBLABLA",
       "her kan være der er noget med noget der er"
     ),
     new CardData(
       4,
       "Bob Johnson",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
       "FORMEGETBLABLA",
       "s9ajdasoidjasoidjaoisjdoaisjd aoisdj asoidj aosidj aoisdj"
     ),
     new CardData(
       5,
       "Bob Johnson",
-      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?
-
-Must go faster... go, go, go, go, go! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here!`,
-      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?
-
-Must go faster... go, go, go, go, go! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here!`
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
+      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?`
     ),
   ];
 
-  res.status(500).json(cards);
+  res.status(200).json(cards);
   console.log(CardData);
 }
