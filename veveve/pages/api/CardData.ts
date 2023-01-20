@@ -41,6 +41,12 @@ export default function handler(
       "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
       `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?`
     ),
+    new CardData(
+      6,
+      "Bob Johnson",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
+      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?`
+    ),
   ];
 
   res.status(200).json(cards);

@@ -22,8 +22,8 @@ export default function Home() {
       </Head>
       <Nav links={Links} />
       <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
-      <Footer />
       <Card />
+      <Footer />
     </>
   );
 }

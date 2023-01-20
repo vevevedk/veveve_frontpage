@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "../../styles/CardsStyle.module.css";
+import CTA from "../CTA/CTA";
+import { stil, tekst } from "../CTA/CTA";
 import { CardData } from "../model/CardDataModel";
 
 const MyComponent: React.FC = () => {
@@ -19,16 +21,22 @@ const MyComponent: React.FC = () => {
       <div className={style.CardContainer}>
         {cards.map((card) => (
           <div key={card.id} className={style.Card}>
-            <h3 className={style.header2}>{card.title}</h3>
+            <h3 className={style.header2}>
+              {card.title.split(" ").slice(0, 10).join(" ")}
+            </h3>
             {card.url ? (
               <img src={card.url} alt={card.title} className={style.img} />
             ) : null}
-            <p>{card.description}</p>
+            <p>{card.description.split(" ").slice(0, 100).join(" ") + "..."}</p>
             <div className={style.popUp}>
               <p>{card.extra}</p>
             </div>
 
-            <button>TRYK IKKE PÅ MIG</button>
+            <CTA
+              stil={stil.blue}
+              tekst={tekst.kontakt}
+              popup={<div>{card.description}</div>}
+            />
           </div>
         ))}
       </div>

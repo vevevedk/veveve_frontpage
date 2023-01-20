@@ -50,3 +50,17 @@
 .img {
   width: 20%;
 }
+
+@media screen and (min-width: 600px) {
+  .CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Card {
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 400px;
+  }
+}
