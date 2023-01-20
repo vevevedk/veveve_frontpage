@@ -8,10 +8,9 @@ const MyComponent: React.FC = () => {
   const [cards, setCards] = useState<CardData[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/CardData")
+    fetch(process.env.NEXT_PUBLIC_BASEPATH + "api/CardData")
       .then((res) => res.json())
       .then((data) => setCards(data))
-
       .catch((err) => console.error(err));
   }, []);
 
