@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import Footer from "../components/footer/Footer";
 
 import Hero from "../components/HeroSection/Hero";
@@ -21,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav links={Links} />
-      <Hero title="jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
+      <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
       <Footer />
     </>
   );
