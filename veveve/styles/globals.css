@@ -31,7 +31,6 @@ nav {
   top: 0;
   right: 0;
   z-index: 1000000;
-
 }
 
 h1,
@@ -48,5 +47,5 @@ p {
 }
 
 a {
-  color: white
+  color: white;
 }

@@ -5,6 +5,7 @@ interface CardProps {
   title: string;
   description: string;
   extra?: string;
+  Url?: string | null;
 }
 
 const MyComponent: React.FC = () => {
@@ -18,15 +19,25 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className={style.CardContainer}>
-      {cards.map((card) => (
-        <div key={card.id}>
-          <h2>{card.title}</h2>
-          <p>{card.description}</p>
-          <p>{card.extra}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <h2> Beskrivelse af services </h2>
+      <div className={style.CardContainer}>
+        {cards.map((card) => (
+          <div key={card.id} className={style.Card}>
+            <h3 className={style.header2}>{card.title}</h3>
+            {card.Url ? (
+              <img src={card.Url} alt={card.title} className={style.img} />
+            ) : null}
+            <p>{card.description}</p>
+            <div className={style.popUp}>
+              <p>{card.extra}</p>
+            </div>
+
+            <button />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
