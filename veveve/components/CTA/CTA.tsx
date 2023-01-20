@@ -46,7 +46,7 @@ const CTAButton: React.FC<CTA> = ({ stil, tekst, popup }) => {
         onClick={() => setIsOpen(!isOpen)}
         ref={ref}
       >
-        <h1>{tekst}</h1>
+        <h3>{tekst}</h3>
       </button>
     </div>
   );
