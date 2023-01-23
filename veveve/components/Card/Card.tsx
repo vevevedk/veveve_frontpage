@@ -34,7 +34,13 @@ const MyComponent: React.FC = () => {
             <CTA
               stil={stil.blue}
               tekst={tekst.kontakt}
-              popup={<div>{card.description}</div>}
+              popup={
+                <div>
+                  {" "}
+                  <h3> {card.title}</h3>
+                  {card.description}
+                </div>
+              }
             />
           </div>
         ))}

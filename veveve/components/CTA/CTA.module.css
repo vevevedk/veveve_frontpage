@@ -27,14 +27,19 @@
 }
 
 .ModalBody {
-  position: absolute;
+  border: 2px solid var(--blue);
   margin: auto auto;
-  top: 40%;
-  left: 25%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 98;
-  border-radius: 4px;
+  border-radius: 16px;
   background-color: white;
-  min-width: 50vw;
+  width: 80vw;
+  overflow: scroll;
+  max-height: 80vh;
+  animation: modal-fade-in 0.2s ease-in-out;
 }
 
 .ModalContent {
@@ -42,6 +47,16 @@
   max-height: 100%;
   margin: 20px;
 }
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .blue h1,
   .orange h1,
@@ -57,5 +72,8 @@
   .white h1 {
     font-size: 24px;
     margin: 5px 30px 10px 30px;
+  }
+  .ModalBody {
+    overflow: hidden;
   }
 }
