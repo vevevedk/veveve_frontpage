@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import style from "../../styles/CardsStyle.module.css";
 import CTA from "../CTA/CTA";
 import { stil, tekst } from "../CTA/CTA";
-import { CardData } from "../model/CardDataModel";
+import { ServicesData } from "../model/CardDataModel";
 
 const MyComponent: React.FC = () => {
-  const [cards, setCards] = useState<CardData[]>([]);
+  const [cards, setCards] = useState<ServicesData[]>([]);
 
   useEffect(() => {
     fetch(process.env.NEXT_PUBLIC_BASEPATH + "api/CardData")
@@ -18,17 +18,23 @@ const MyComponent: React.FC = () => {
     <div className={style.BGblue}>
       <h2> Beskrivelse af services </h2>
       <div className={style.CardContainer}>
-        {cards.map((card) => (
-          <div key={card.id} className={style.Card}>
+        {cards.map((service) => (
+          <div key={service.id} className={style.Card}>
             <h3 className={style.header2}>
-              {card.title.split(" ").slice(0, 10).join(" ")}
+              {service.title.split(" ").slice(0, 10).join(" ")}
             </h3>
-            {card.url ? (
-              <img src={card.url} alt={card.title} className={style.img} />
+            {service.url ? (
+              <img
+                src={service.url}
+                alt={service.title}
+                className={style.img}
+              />
             ) : null}
-            <p>{card.description.split(" ").slice(0, 100).join(" ") + "..."}</p>
+            <p>
+              {service.description.split(" ").slice(0, 100).join(" ") + "..."}
+            </p>
             <div className={style.popUp}>
-              <p>{card.extra}</p>
+              <p>{service.extra}</p>
             </div>
 
             <CTA
@@ -37,8 +43,8 @@ const MyComponent: React.FC = () => {
               popup={
                 <div>
                   {" "}
-                  <h3> {card.title}</h3>
-                  {card.description}
+                  <h3> {service.title}</h3>
+                  {service.description}
                 </div>
               }
             />
