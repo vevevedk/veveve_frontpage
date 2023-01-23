@@ -14,7 +14,6 @@ export enum stil {
 export enum tekst {
   kontakt = "kontakt",
 }
-
 const CTAButton: React.FC<CTA> = ({ stil, tekst, popup }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>(null);
@@ -26,7 +25,27 @@ const CTAButton: React.FC<CTA> = ({ stil, tekst, popup }) => {
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [ref]);
+
+  function preventScrolling(event: TouchEvent) {
+    event.preventDefault();
+  }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.addEventListener("touchmove", preventScrolling, {
+        passive: false,
+      });
+    } else {
+      document.documentElement.style.overflow = "auto";
+      document.body.removeEventListener("touchmove", preventScrolling);
+    }
+  }, [isOpen]);
+
   function ShowModal() {
     if (isOpen) {
       return (
