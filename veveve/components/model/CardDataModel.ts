@@ -1,4 +1,4 @@
-export class CardData {
+export class ServicesData {
   id: number;
   title: string;
   url: string;
