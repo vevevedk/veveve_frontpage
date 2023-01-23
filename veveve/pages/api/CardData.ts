@@ -50,5 +50,4 @@ export default function handler(
   ];
 
   res.status(200).json(cards);
-  console.log(CardData);
 }
