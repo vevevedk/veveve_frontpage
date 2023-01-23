@@ -17,6 +17,27 @@ body {
   padding: 0;
   margin: 0;
 }
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Create a new container for the floating scrollbar */
+.floating-scrollbar {
+  position: fixed; /* make it fixed so it stays in the same position */
+  right: 0; /* position it on the right side */
+  top: 0; /* position it on the top */
+  width: 8px; /* set the width */
+  height: 100%; /* make it the same height as the content */
+  overflow-y: scroll; /* enable scrolling */
+}
+
+/* Style the floating scrollbar */
+.floating-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* set the color */
+  border-radius: 4px; /* set the border radius */
+}
 
 h1,
 h2,

@@ -20,10 +20,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Nav links={Links} />
       <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
       <Card />
       <Footer />
+      <div className="floating-scrollbar"></div>
     </>
   );
 }
