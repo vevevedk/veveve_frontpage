@@ -11,9 +11,18 @@ export default function handler(
   res: NextApiResponse<PriceData[]>
 ) {
   let price: PriceData[] = [
-    new PriceData(1, "lille pakke", 1111, "her er beskrivelsen"),
-    new PriceData(2, "lille pakke", 1111, "her er beskrivelsen"),
-    new PriceData(3, "lille pakke", 1111, "her er beskrivelsen"),
+    new PriceData(1, "lille pakke", 1111, [
+      "sojsdoijfisdpf",
+      "soidfjosiadjfoiasdjfio",
+    ]),
+    new PriceData(2, "lille pakke", 1111, [
+      "her er beskrivelsen",
+      "iuhfiuashdfiuahdsuifhadsiu",
+    ]),
+    new PriceData(3, "lille pakke", 1111, [
+      "her er beskrivelsen",
+      "sadijasd9fhasdiuhfiuadsh",
+    ]),
   ];
 
   res.status(200).json(price);
