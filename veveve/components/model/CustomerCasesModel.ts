@@ -1,4 +1,4 @@
-export class KundeCasesData {
+export class CustomerCasesData {
   id: number;
   title: string;
   img: string;

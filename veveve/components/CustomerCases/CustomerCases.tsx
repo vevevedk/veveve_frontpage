@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { KundeCasesData } from "../../components/model/KundeCasesModel";
+import { CustomerCasesData } from "../model/CustomerCasesModel";
 import style from "../../styles/KundeCasesStyle.module.css";
 const MyComponent: React.FC = () => {
-  const [cases, setCases] = useState<KundeCasesData[]>([]);
+  const [cases, setCases] = useState<CustomerCasesData[]>([]);
 
   useEffect(() => {
-    fetch(process.env.NEXT_PUBLIC_BASEPATH + "api/KundeCasesData")
+    fetch(process.env.NEXT_PUBLIC_BASEPATH + "api/CustomerCasesData")
       .then((res) => res.json())
       .then((data) => setCases(data))
       .catch((err) => console.error(err));
   }, []);
 
-  return <div className={style.KundeCases}></div>;
+  return <div className={style.CustomerCases}></div>;
 };
