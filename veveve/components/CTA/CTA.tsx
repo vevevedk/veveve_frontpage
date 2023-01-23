@@ -49,7 +49,7 @@ const CTAButton: React.FC<CTA> = ({ stil, tekst, popup }) => {
   function ShowModal() {
     if (isOpen) {
       return (
-        <div className={styles.ModalBody}>
+        <div className={`${styles.ModalBody}`}>
           <div className={styles.ModalContent}>{popup}</div>
         </div>
       );

@@ -39,6 +39,7 @@
   width: 80vw;
   overflow: scroll;
   max-height: 80vh;
+  animation: modal-fade-in 0.2s ease-in-out;
 }
 
 .ModalContent {
@@ -46,6 +47,16 @@
   max-height: 100%;
   margin: 20px;
 }
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .blue h1,
   .orange h1,
