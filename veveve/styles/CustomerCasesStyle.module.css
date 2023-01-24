@@ -1,0 +1,35 @@
+.CustomerCases {
+  min-height: 600px;
+}
+
+.CustomerCases h2 {
+  text-align: center;
+}
+
+.CasesContainer {
+  min-height: 60px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Cases {
+  min-width: 400px;
+  min-height: 400px;
+  background-size: contain;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 600px;
+  height: 400px;
+  transform: skew(-20deg);
+  background: #555;
+  position: relative;
+  left: -500px;
+  overflow: hidden;
+}
+
+.overlay:hover {
+  left: -100;
+}

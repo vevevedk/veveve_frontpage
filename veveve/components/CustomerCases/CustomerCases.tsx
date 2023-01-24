@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CustomerCasesData } from "../model/CustomerCasesModel";
-import style from "../../styles/KundeCasesStyle.module.css";
+import styles from "../../styles/CustomerCasesStyle.module.css";
+import { url } from "inspector";
 const MyComponent: React.FC = () => {
   const [cases, setCases] = useState<CustomerCasesData[]>([]);
 
@@ -11,5 +12,29 @@ const MyComponent: React.FC = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  return <div className={style.CustomerCases}></div>;
+  return (
+    <div className={styles.CustomerCases}>
+      <h2> Beskrivelse af services </h2>
+      <div className={styles.CasesContainer}>
+        {cases.map((Services) => (
+          <div
+            key={Services.id}
+            style={{
+              backgroundImage: `url(${Services.img})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+            className={styles.Cases}
+          >
+            <div className={styles.overlay}>
+              <p className={styles.content}>{Services.title}</p>
+              <h3 className={styles.content}>{Services.title}</h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
+
+export default MyComponent;
