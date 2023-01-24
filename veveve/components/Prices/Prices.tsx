@@ -5,11 +5,11 @@ import style from "../../styles/priceStyle.module.css";
 import CTA, { stil, tekst } from "../CTA/CTA";
 
 const Prices: React.FC = () => {
-  let [width, setWidth] = useState<number>(() :number=> {
-    if (typeof(window) !== "undefined") {
-      return window.innerWidth
+  let [width, setWidth] = useState<number>((): number => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
     } else {
-      return 0
+      return 0;
     }
   });
   const [price, setPrices] = useState<PriceData[]>([]);
@@ -44,7 +44,9 @@ const Prices: React.FC = () => {
             <div className={style.content}>
               {price.map((prices) => (
                 <div key={prices.id} className={style.cards}>
-                  <p className={style.price}>{prices.price} Dkk ex moms</p>
+                  <div className={style.priceBox}>
+                    <p className={style.price}>{prices.price} Dkk ex moms</p>
+                  </div>
                   <h3> {prices.title}</h3>
                   {prices.servicesIncluded.map((service) => (
                     <ul key={prices.id} className={style.inc}>

@@ -70,4 +70,7 @@
     border-radius: 26px;
     width: 30%;
   }
+  .priceBox {
+    background-color: var(--blue);
+  }
 }
