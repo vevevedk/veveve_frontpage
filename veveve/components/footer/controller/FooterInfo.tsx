@@ -10,10 +10,10 @@ interface Footer {
 const FooterInfo: React.FC<Footer> = ({ Line1, Line2, Line3, Line4 }) => {
   return (
     <div className={Style.FooterInfo}>
-      <h2>{Line1}</h2>
-      <h2>{Line2}</h2>
-      <h2>{Line3}</h2>
-      <h2>{Line4}</h2>
+      <h3>{Line1}</h3>
+      <h3>{Line2}</h3>
+      <h3>{Line3}</h3>
+      <h3>{Line4}</h3>
     </div>
   );
 };
