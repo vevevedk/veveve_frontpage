@@ -5,6 +5,7 @@ import Card from "../components/Card/Card";
 import Hero from "../components/HeroSection/Hero";
 import { LinkingModel } from "../components/model/LinkModel";
 import Nav from "../components/Nav/Nav";
+import Prices from "../components/Prices/Prices";
 
 const Links: LinkingModel[] = [
   new LinkingModel("1", "cases", "#cases"),
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="bg-color-change">
         <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
         <Card />
+        <Prices />
         <Footer />
       </div>
     </>
