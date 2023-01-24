@@ -47,11 +47,13 @@ const Prices: React.FC = () => {
             >
               <h3> {prices.title}</h3>
               {prices.servicesIncluded.map((service) => (
-                <p key={prices.id} className={style.inc}>
-                  - {service}
-                </p>
+                <ul key={prices.id} className={style.inc}>
+                  <li>
+                    <p> {service}</p>
+                  </li>
+                </ul>
               ))}
-              <p className={style.price}>{prices.price} dkk ex moms</p>
+              <p className={style.price}>{prices.price} Dkk ex moms</p>
             </div>
           ))}
           <CTA
