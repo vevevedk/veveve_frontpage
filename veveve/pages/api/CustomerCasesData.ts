@@ -11,19 +11,19 @@ export default function handler(
       1,
       "test1",
       "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
-      "",
-      "",
-      "",
-      ""
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
     ),
     new CustomerCasesData(
       2,
       "test2",
       "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
-      "",
-      "",
-      "",
-      ""
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
     ),
     new CustomerCasesData(
       3,

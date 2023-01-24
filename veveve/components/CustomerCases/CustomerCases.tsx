@@ -27,8 +27,12 @@ const MyComponent: React.FC = () => {
             className={styles.Cases}
           >
             <div className={styles.overlay}>
-              <p className={styles.content}>{Services.title}</p>
-              <h3 className={styles.content}>{Services.title}</h3>
+              <div className={styles.content}>
+                <h3>{Services.line1}</h3>
+                <h3>{Services.line2}</h3>
+                <h3>{Services.line3}</h3>
+                <h3>{Services.line4}</h3>
+              </div>
             </div>
           </div>
         ))}
