@@ -5,7 +5,13 @@ import style from "../../styles/priceStyle.module.css";
 import CTA, { stil, tekst } from "../CTA/CTA";
 
 const Prices: React.FC = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  let [width, setWidth] = useState<number>(() :number=> {
+    if (typeof(window) !== "undefined") {
+      return window.innerWidth
+    } else {
+      return 0
+    }
+  });
   const [price, setPrices] = useState<PriceData[]>([]);
   const [activeTab, setActiveTab] = useState<string>("");
 
