@@ -1,9 +1,4 @@
 .Footer {
-  background-color: var(--blue);
-  background-image: url("../../../public/images/backgroundpattern.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 125vw;
   width: 100vw;
   display: flex;
   flex-direction: column;
