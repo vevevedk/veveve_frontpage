@@ -44,8 +44,8 @@ const Prices: React.FC = () => {
               key={prices.id}
               className={activeTab === prices.title ? "" : style.inactiveTab}
             >
-              <p className={style.price}>{prices.price}</p>
-              <p className={style.inc}>{prices.servicesIncluded}</p>
+              <p className={style.price}>{prices.price}</p> 
+              {prices.servicesIncluded.map((service) => ( <p className={style.inc}> {service} </p> ))}
             </div>
           ))}
         </div>
