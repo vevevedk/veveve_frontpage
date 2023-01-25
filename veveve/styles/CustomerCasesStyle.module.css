@@ -23,14 +23,11 @@
 }
 
 .Cases > h3 {
-  /* min-width: 350px;
-  min-height: 350px;
-  align-items: center; */
-  display: flex;
-  justify-items: center;
-  z-index: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
   color: var(--white);
-  justify-content: center;
   margin: 0;
 }
 
@@ -38,7 +35,7 @@
   z-index: 10;
   width: 300px;
   height: 300px;
-  transform: skew(-15deg);
+  transform: skew(-15deg) translateX(10%);
   background: var(--blue);
   position: relative;
   animation-name: test2;
@@ -46,6 +43,7 @@
   animation-fill-mode: both;
   overflow: hidden;
   color: var(--white);
+  transition-delay: 1s;
 }
 
 @keyframes test2 {
