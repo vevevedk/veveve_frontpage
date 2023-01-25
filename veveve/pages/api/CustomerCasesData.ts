@@ -10,7 +10,7 @@ export default function handler(
     new CustomerCasesData(
       1,
       "test1",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
@@ -19,7 +19,7 @@ export default function handler(
     new CustomerCasesData(
       2,
       "test2",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
@@ -28,7 +28,7 @@ export default function handler(
     new CustomerCasesData(
       3,
       "test3",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
@@ -37,7 +37,7 @@ export default function handler(
     new CustomerCasesData(
       4,
       "test4",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
@@ -46,7 +46,7 @@ export default function handler(
     new CustomerCasesData(
       5,
       "test5",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
@@ -55,7 +55,7 @@ export default function handler(
     new CustomerCasesData(
       6,
       "test6",
-      "https://lh3.googleusercontent.com/p/AF1QipPiVkNbBwzAC3tCrV1tC1NbZu1K7Oq72ty2_l7k=s1360-w1360-h1020",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
