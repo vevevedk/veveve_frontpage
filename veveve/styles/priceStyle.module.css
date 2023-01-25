@@ -92,7 +92,7 @@
   .price {
     margin-bottom: -20px;
     box-sizing: border-box;
-    font-size: 30px;
+
     color: #fff;
   }
 
@@ -114,9 +114,7 @@
     width: 100%;
     overflow: auto;
   }
-  .textBox h3 {
-    font-size: 30px;
-  }
+
   .cards .CTA {
     position: absolute;
     bottom: 10px;
