@@ -1,5 +1,5 @@
 .CustomerCases {
-  min-height: 600px;
+  min-height: 400px;
 }
 
 .CustomerCases h2 {
@@ -7,15 +7,15 @@
 }
 
 .CasesContainer {
-  min-height: 60px;
   display: flex;
   overflow-x: scroll;
 }
 
 .Cases {
   z-index: 0;
-  min-width: 350px;
-  min-height: 350px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
   background-size: contain;
   margin: 20px;
   overflow: hidden;
@@ -36,8 +36,8 @@
 
 .overlay {
   z-index: 10;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   transform: skew(-15deg);
   background: var(--blue);
   position: relative;
@@ -53,13 +53,13 @@
     left: -100px;
   }
   100% {
-    left: -300px;
+    left: -250px;
   }
 }
 
 @keyframes test {
   0% {
-    left: -300px;
+    left: -250px;
   }
   100% {
     left: -100px;
@@ -79,4 +79,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 1100px) {
+  .CustomerCases {
+    min-height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CasesContainer {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+  }
 }
