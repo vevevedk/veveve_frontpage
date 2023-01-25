@@ -63,6 +63,10 @@
     flex-direction: row;
   }
   .cards {
+    border-top: 0px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
     text-align: center;
     height: 400px;
     position: relative;
@@ -75,6 +79,10 @@
   }
 
   .priceBox {
+    border-top: 2px solid black;
+    border-right: 0px solid black;
+    border-bottom: 0px;
+    border-left: 0px solid black;
     padding-left: 10px;
     text-align: left;
     font-variant: small-caps;
