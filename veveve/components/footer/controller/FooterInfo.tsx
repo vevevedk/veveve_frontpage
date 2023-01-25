@@ -1,20 +1,31 @@
 import Style from "./Footer.module.css";
+import { Location } from "../../model/FooterModel";
+let location: Location[] = [
+  new Location(
+    "Christian D Xs Vej 173",
+    "8270 Højbjerg",
+    61663930,
+    "hello@veveve.dk"
+  ),
+];
 
-interface Footer {
-  Line1: string;
-  Line2: string;
-  Line3: string;
-  Line4: string;
-}
-
-const FooterInfo: React.FC<Footer> = ({ Line1, Line2, Line3, Line4 }) => {
+const FooterInfo: React.FC = () => {
   return (
-    <div className={Style.FooterInfo}>
-      <h3>{Line1}</h3>
-      <h3>{Line2}</h3>
-      <h3>{Line3}</h3>
-      <h3>{Line4}</h3>
-    </div>
+    <address className={Style.FooterInfo}>
+      {location.map((place) => (
+        <div key={place.phone}>
+          <h3>{place.location} </h3>
+          <h3>{place.zip}</h3>
+          <h3>
+            <a href={"tel:+45" + place.phone}>{place.phone}</a>
+          </h3>
+
+          <h3>
+            <a href={"mailto:" + place.email}>{place.email}</a>
+          </h3>
+        </div>
+      ))}
+    </address>
   );
 };
 
