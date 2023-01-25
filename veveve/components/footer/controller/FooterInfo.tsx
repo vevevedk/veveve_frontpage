@@ -1,20 +1,26 @@
 import Style from "./Footer.module.css";
+import { ContactDetails } from "../../model/FooterModel";
+let contactDetails: ContactDetails = new ContactDetails(
+  "Christian D Xs Vej 173",
+  "8270 Højbjerg",
+  "61 66 39 30",
+  "hello@veveve.dk"
+);
 
-interface Footer {
-  Line1: string;
-  Line2: string;
-  Line3: string;
-  Line4: string;
-}
-
-const FooterInfo: React.FC<Footer> = ({ Line1, Line2, Line3, Line4 }) => {
+const FooterInfo: React.FC = () => {
   return (
-    <div className={Style.FooterInfo}>
-      <h3>{Line1}</h3>
-      <h3>{Line2}</h3>
-      <h3>{Line3}</h3>
-      <h3>{Line4}</h3>
-    </div>
+    <address className={Style.FooterInfo}>
+      <div key={contactDetails.phone}>
+        <h3>{contactDetails.location} </h3>
+        <h3>{contactDetails.zip}</h3>
+        <h3>
+          <a href={"tel:+45" + contactDetails.phone}>{contactDetails.phone}</a>
+        </h3>
+        <h3>
+          <a href={"mailto:" + contactDetails.email}>{contactDetails.email}</a>
+        </h3>
+      </div>
+    </address>
   );
 };
 
