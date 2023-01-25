@@ -52,7 +52,8 @@ const Prices: React.FC = () => {
                 {price.map((prices) => (
                   <div key={prices.id} className={`${style.cards} card`}>
                     <div className={style.priceBox}>
-                      <p className={style.price}>{prices.price} Dkk ex moms</p>
+                      <h3 className={style.price}>Dkk {prices.price}/Måned </h3>
+                      <p className={style.smallText}> Dkk ex moms</p>
                     </div>
                     <div className={style.textBox}>
                       <h3> {prices.title}</h3>
