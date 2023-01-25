@@ -14,7 +14,7 @@ const MyComponent: React.FC = () => {
 
   return (
     <div className={styles.CustomerCases}>
-      <h2> Beskrivelse af services </h2>
+      <h2> Kunde Cases </h2>
       <div className={styles.CasesContainer}>
         {cases.map((Services) => (
           <div
@@ -26,12 +26,13 @@ const MyComponent: React.FC = () => {
             }}
             className={styles.Cases}
           >
+            <h3>{Services.title}</h3>
             <div className={styles.overlay}>
               <div className={styles.content}>
-                <h3>{Services.line1}</h3>
-                <h3>{Services.line2}</h3>
-                <h3>{Services.line3}</h3>
-                <h3>{Services.line4}</h3>
+                <h4>{Services.line1}</h4>
+                <h4>{Services.line2}</h4>
+                <h4>{Services.line3}</h4>
+                <h4>{Services.line4}</h4>
               </div>
             </div>
           </div>

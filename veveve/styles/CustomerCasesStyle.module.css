@@ -13,22 +13,37 @@
 }
 
 .Cases {
-  min-width: 400px;
-  min-height: 400px;
+  z-index: 0;
+  min-width: 350px;
+  min-height: 350px;
   background-size: contain;
   margin: 20px;
   overflow: hidden;
+  display: flex;
+}
+
+.Cases > h3 {
+  /* min-width: 350px;
+  min-height: 350px;
+  align-items: center; */
+  display: flex;
+  justify-items: center;
+  z-index: 0;
+  color: var(--white);
+  justify-content: center;
+  margin: 0;
 }
 
 .overlay {
-  width: 400px;
-  height: 400px;
-  transform: skew(-20deg);
+  z-index: 10;
+  width: 350px;
+  height: 350px;
+  transform: skew(-15deg);
   background: var(--blue);
   position: relative;
   animation-name: test2;
   animation-duration: 1s;
-  left: -300px;
+  animation-fill-mode: both;
   overflow: hidden;
   color: var(--white);
 }
@@ -54,12 +69,12 @@
 .overlay:hover {
   animation-name: test;
   animation-duration: 1s;
-  left: -100px;
+  animation-fill-mode: both;
 }
 
 .content {
   margin-left: 100px;
-  transform: skew(20deg);
+  transform: skew(15deg);
   height: 90%;
   display: flex;
   flex-direction: column;
