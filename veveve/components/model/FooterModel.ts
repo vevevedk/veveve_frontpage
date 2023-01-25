@@ -10,12 +10,12 @@ export class SoMe {
   }
 }
 
-export class Location {
+export class ContactDetails {
   location: string;
   zip: string;
-  phone: number;
+  phone: string;
   email: string;
-  constructor(location: string, zip: string, phone: number, email: string) {
+  constructor(location: string, zip: string, phone: string, email: string) {
     this.location = location;
     this.zip = zip;
     this.phone = phone;
