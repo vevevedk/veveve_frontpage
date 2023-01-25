@@ -43,7 +43,7 @@ const Prices: React.FC = () => {
   return (
     <>
       {domLoaded &&
-        (width >= 600 ? (
+        (width >= 800 ? (
           <>
             <div className={style.priceWrapPC}>
               <h2>Beskrivelse af priser</h2>
