@@ -6,11 +6,8 @@ import CTA, { stil, tekst } from "../CTA/CTA";
 
 const Prices: React.FC = () => {
   const [domLoaded, setDomLoaded] = useState(false);
-
-  useEffect(() => {
-    setDomLoaded(true);
-  }, []);
-
+  const [price, setPrices] = useState<PriceData[]>([]);
+  const [activeTab, setActiveTab] = useState<string>("");
   let [width, setWidth] = useState<number>((): number => {
     if (typeof window !== "undefined") {
       return window.innerWidth;
@@ -18,8 +15,10 @@ const Prices: React.FC = () => {
       return 0;
     }
   });
-  const [price, setPrices] = useState<PriceData[]>([]);
-  const [activeTab, setActiveTab] = useState<string>("");
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
 
   useEffect(() => {
     fetch(process.env.NEXT_PUBLIC_BASEPATH + "api/PricesData")
