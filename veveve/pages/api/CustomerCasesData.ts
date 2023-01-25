@@ -7,12 +7,60 @@ export default function handler(
   res: NextApiResponse<CustomerCasesData[]>
 ) {
   let CustomerCases: CustomerCasesData[] = [
-    new CustomerCasesData(1, "test1", "", "", "", "", ""),
-    new CustomerCasesData(2, "test1", "", "", "", "", ""),
-    new CustomerCasesData(3, "test1", "", "", "", "", ""),
-    new CustomerCasesData(4, "test1", "", "", "", "", ""),
-    new CustomerCasesData(5, "test1", "", "", "", "", ""),
-    new CustomerCasesData(6, "test1", "", "", "", "", ""),
+    new CustomerCasesData(
+      1,
+      "test1",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
+    new CustomerCasesData(
+      2,
+      "test2",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
+    new CustomerCasesData(
+      3,
+      "test3",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
+    new CustomerCasesData(
+      4,
+      "test4",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
+    new CustomerCasesData(
+      5,
+      "test5",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
+    new CustomerCasesData(
+      6,
+      "test6",
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
+      "SEO 325%",
+      "Profit 240%",
+      "fdsfs",
+      "grtrreds"
+    ),
   ];
 
   res.status(200).json(CustomerCases);
