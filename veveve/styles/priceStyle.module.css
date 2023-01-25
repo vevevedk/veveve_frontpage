@@ -57,20 +57,62 @@
 }
 
 @media screen and (min-width: 600px) {
-  .priceWrapPC .content {
-    background: none;
-    display: flex;
+  .content {
+    background-color: white;
+    border-radius: 0;
     flex-direction: row;
   }
+  .cards {
+    height: 400px;
+    position: relative;
+    width: 25%;
+    border-radius: 26px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .priceBox {
+    background-color: var(--blue);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    border-radius: 26px 26px 0 0;
+    width: 100%;
+  }
+
+  .price {
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 30px;
+    height: 100%;
+    color: #fff;
+  }
+  
   .inc {
     list-style-type: none;
   }
-  .cards {
-    background-color: red;
-    border-radius: 26px;
-    width: 30%;
+
+  .textBox {
+    box-sizing: border-box;
+    height: calc(100% - 100px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: auto;
   }
-  .priceBox {
-    background-color: var(--blue);
+  .textBox h3 {
+    font-size: 30px;
+  }
+  .cards .CTA {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    margin: auto;
+    text-align: center;
   }
 }

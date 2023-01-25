@@ -43,34 +43,38 @@ const Prices: React.FC = () => {
 
   return (
     <>
-      {domLoaded && (
-        width >= 600 ? (
+      {domLoaded &&
+        (width >= 600 ? (
           <>
             <div className={style.priceWrapPC}>
               <h2>Beskrivelse af priser</h2>
               <div className={style.content}>
                 {price.map((prices) => (
-                  <div key={prices.id} className={style.cards}>
+                  <div key={prices.id} className={`${style.cards} card`}>
                     <div className={style.priceBox}>
                       <p className={style.price}>{prices.price} Dkk ex moms</p>
                     </div>
-                    <h3> {prices.title}</h3>
-                    {prices.servicesIncluded.map((service) => (
-                      <ul key={prices.id} className={style.inc}>
-                        <li>
-                          <p> {service}</p>
-                        </li>
-                      </ul>
-                    ))}
-                    <CTA
-                      stil={stil.orange}
-                      tekst={tekst.kontakt}
-                      popup={
-                        <div>
-                          <h3> Oih diz is da shizzle</h3>
-                        </div>
-                      }
-                    />
+                    <div className={style.textBox}>
+                      <h3> {prices.title}</h3>
+                      {prices.servicesIncluded.map((service) => (
+                        <ul key={prices.id} className={style.inc}>
+                          <li>
+                            <p> {service}</p>
+                          </li>
+                        </ul>
+                      ))}{" "}
+                    </div>
+                    <div className={style.CTA}>
+                      <CTA
+                        stil={stil.orange}
+                        tekst={tekst.kontakt}
+                        popup={
+                          <div>
+                            <h3> Oih diz is da shizzle</h3>
+                          </div>
+                        }
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -124,9 +128,7 @@ const Prices: React.FC = () => {
               </div>
             </div>
           </>
-        )
-
-      )}
+        ))}
     </>
   );
 };
