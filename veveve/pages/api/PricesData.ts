@@ -11,17 +11,17 @@ export default function handler(
   res: NextApiResponse<PriceData[]>
 ) {
   let price: PriceData[] = [
-    new PriceData(1, "lille pakke", 1111, [
-      "sojsdoijfisdpf",
-      "soidfjosiadjfoiasdjfio",
+    new PriceData(1, "Lille pakke", 1050, [
+      "1x 30 minutters møde pr. måned",
+      "750 kr i drift pr. konto",
     ]),
-    new PriceData(2, "lille pakke", 1111, [
-      "her er beskrivelsen",
-      "iuhfiuashdfiuahdsuifhadsiu",
+    new PriceData(2, "Mellem pakke", 1350, [
+      "2x 30 minutters møde pr. måned",
+      "950 kr i drift pr. konto",
     ]),
-    new PriceData(3, "lille pakke", 1111, [
-      "her er beskrivelsen",
-      "sadijasd9fhasdiuhfiuadsh",
+    new PriceData(3, "Stor pakke", 1950, [
+      "Fast ugentlig møde",
+      "950 kr i drift pr. konto",
     ]),
   ];
 
