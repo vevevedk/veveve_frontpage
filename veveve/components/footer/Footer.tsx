@@ -12,9 +12,7 @@ export default function Footer() {
         <Image src={VeVeVeLogo} alt="Logo of VeVeVe" />
       </div>
       <div className={Style.Info}>
-        <FooterInfo
-         
-        />
+        <FooterInfo />
         <FooterSome />
       </div>
     </div>
