@@ -35,39 +35,44 @@
   z-index: 10;
   width: 300px;
   height: 300px;
-  transform: skew(-15deg) translateX(10%);
+  transform: skew(-15deg) translateX(-100%);
   background: var(--blue);
   position: relative;
-  animation-name: test2;
-  animation-duration: 1s;
-  animation-fill-mode: both;
   overflow: hidden;
   color: var(--white);
-  transition-delay: 1s;
 }
 
-@keyframes test2 {
-  0% {
-    left: -100px;
+@keyframes out {
+  from {
+    transform: skew(-15deg) translateX(-100%);
   }
-  100% {
-    left: -250px;
-  }
-}
-
-@keyframes test {
-  0% {
-    left: -250px;
-  }
-  100% {
-    left: -100px;
+  to {
+    transform: skew(-15deg) translateX(-50%);
   }
 }
 
-.overlay:hover {
-  animation-name: test;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+@keyframes in {
+  from {
+    transform: skew(-15deg) translateX(-50%);
+  }
+  to {
+    transform: skew(-15deg) translateX(-100%);
+  }
+}
+
+.Cases:hover > .overlay {
+  animation-name: out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+
+.Cases:not(:hover) > .overlay {
+  animation-name: in;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 .content {
