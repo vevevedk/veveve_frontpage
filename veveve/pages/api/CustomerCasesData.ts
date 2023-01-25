@@ -12,7 +12,7 @@ export default function handler(
       "tintin butikken",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
       "SEO 325%",
-      "Profit 240%",
+      "Profit 2403238%",
       "fdsfs",
       "grtrreds"
     ),
@@ -23,7 +23,7 @@ export default function handler(
       "SEO 325%",
       "Profit 240%",
       "fdsfs",
-      "grtrreds"
+      "grtrresdkpwoeruwpds"
     ),
     new CustomerCasesData(
       3,
@@ -48,9 +48,7 @@ export default function handler(
       "test5",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
       "SEO 325%",
-      "Profit 240%",
-      "fdsfs",
-      "grtrreds"
+      "Profit 240%"
     ),
     new CustomerCasesData(
       6,

@@ -12,9 +12,9 @@ export class CustomerCasesData {
     title: string,
     img: string,
     line1: string,
-    line2: string,
-    line3: string,
-    line4: string
+    line2?: string,
+    line3?: string,
+    line4?: string
   ) {
     this.id = id;
     this.title = title;

@@ -37,7 +37,7 @@
   z-index: 10;
   width: 300px;
   height: 300px;
-  transform: skew(-15deg) translateX(-100%);
+  transform: skew(-15deg) translateX(-85%);
   background: var(--blue);
   position: absolute;
   overflow: hidden;
@@ -46,19 +46,19 @@
 
 @keyframes out {
   from {
-    transform: skew(-15deg) translateX(-100%);
+    transform: skew(-15deg) translateX(-80%);
   }
   to {
-    transform: skew(-15deg) translateX(-50%);
+    transform: skew(-15deg) translateX(-35%);
   }
 }
 
 @keyframes in {
   from {
-    transform: skew(-15deg) translateX(-50%);
+    transform: skew(-15deg) translateX(-35%);
   }
   to {
-    transform: skew(-15deg) translateX(-100%);
+    transform: skew(-15deg) translateX(-80%);
   }
 }
 
@@ -78,12 +78,14 @@
 }
 
 .content {
-  margin-left: 100px;
+  margin-left: 120px;
   transform: skew(15deg);
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  word-wrap: break-word;
+  width: 115px;
 }
 
 @media screen and (min-width: 1100px) {
