@@ -9,7 +9,7 @@ export default function handler(
   let CustomerCases: CustomerCasesData[] = [
     new CustomerCasesData(
       1,
-      "test1",
+      "tintin butikken",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
       "SEO 325%",
       "Profit 240%",

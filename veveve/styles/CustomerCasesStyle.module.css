@@ -12,6 +12,7 @@
 }
 
 .Cases {
+  position: relative;
   z-index: 0;
   min-width: 300px;
   max-width: 300px;
@@ -23,9 +24,10 @@
 }
 
 .Cases > h3 {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 9;
   color: var(--white);
   margin: 0;
@@ -37,7 +39,7 @@
   height: 300px;
   transform: skew(-15deg) translateX(-100%);
   background: var(--blue);
-  position: relative;
+  position: absolute;
   overflow: hidden;
   color: var(--white);
 }
