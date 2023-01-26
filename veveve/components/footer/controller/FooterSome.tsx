@@ -12,7 +12,7 @@ const FooterSome: React.FC = ({}) => {
     <div className={Style.FooterInfo}>
       <h3>Social Medias</h3>
       {some.map((SoMe) => (
-        <h3 key={SoMe.id}>
+        <h3 key={SoMe.name + SoMe.id}>
           <a href={SoMe.url} target="_blank" rel="noreferrer">
             {SoMe.name}
           </a>
