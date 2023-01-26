@@ -7,7 +7,17 @@ export default function handler(
   res: NextApiResponse<AboutMeData[]>
 ) {
   let AboutMe: AboutMeData[] = [
-    new AboutMeData(1, "URL", ["part1", "part2", "part3", "part4", "part5"]),
+    new AboutMeData(
+      1,
+      "https://veveve-bucket.fra1.digitaloceanspaces.com/AboutMe/Sirius_Black_profile.webp",
+      [
+        "This is a test if there is a bit more text in the test areas. Lets see how all this will effect the page and stuff. I really hope it doesnt frick anything up but here it goes!",
+        "This is a test if there is a bit more text in the test areas. Lets see how all this will effect the page and stuff. I really hope it doesnt frick anything up but here it goes!",
+        "This is a test if there is a bit more text in the test areas. Lets see how all this will effect the page and stuff. I really hope it doesnt frick anything up but here it goes!",
+        "This is a test if there is a bit more text in the test areas. Lets see how all this will effect the page and stuff. I really hope it doesnt frick anything up but here it goes!",
+        "part5",
+      ]
+    ),
   ];
 
   res.status(200).json(AboutMe);

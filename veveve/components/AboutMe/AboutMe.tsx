@@ -15,13 +15,18 @@ const MyComponent: React.FC = () => {
     <div className={styles.AboutMe}>
       <div className={styles.AboutMeContainer}>
         <h2> Hvem er jeg? </h2>
-
         {cases.map((content) => (
           <div className={styles.AboutMeContent} key={"aboutme" + content.id}>
-            {content.breadtext.map((btext) => (
-              <div key={btext}>{btext}</div>
-            ))}
-            <h3 className={styles.AboutMeImg}>{content.img}</h3>
+            <div className={styles.AboutMeText}>
+              {content.breadtext.map((btext) => (
+                <p key={btext}>{btext}</p>
+              ))}
+            </div>
+            <img
+              src={content.img}
+              alt="picture of Andreas"
+              className={styles.AboutMeImg}
+            />
           </div>
         ))}
       </div>
