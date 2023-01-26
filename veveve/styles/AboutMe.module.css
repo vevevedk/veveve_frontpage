@@ -6,6 +6,8 @@
 
 .AboutMeContainer {
   background-color: var(--white);
+  background-image: url("../public/images/AboutMebackground.svg");
+  background-position: center;
   border-radius: var(--rounded1);
   padding: 20px;
   margin: 0 20px;
@@ -33,12 +35,12 @@
 
 @media screen and (min-width: 700px) {
   .AboutMe {
-    padding: 5vw 0;
+    padding: 30px 0;
   }
 
   .AboutMeContainer {
-    padding: 5vw;
-    margin: 0 5vw;
+    padding: 30px;
+    margin: 0 30px;
   }
 
   .AboutMeContent {
@@ -47,19 +49,38 @@
     padding-top: 20px;
   }
 
+  .AboutMeImg {
+    width: 50%;
+    max-width: 300px;
+  }
   .AboutMeText {
     display: block;
     width: 50%;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .AboutMe {
-    padding: 5vw 0;
+    padding: 50px 0;
   }
 
   .AboutMeContainer {
-    padding: 5vw;
-    margin: 0 10vw;
+    padding: 100px;
+    margin: 0 50px;
+  }
+
+  .AboutMeContent {
+    min-width: 100%;
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .AboutMeImg {
+    width: 50%;
+    max-width: 300px;
+  }
+  .AboutMeText {
+    display: block;
+    width: 50%;
   }
 }

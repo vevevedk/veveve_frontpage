@@ -29,8 +29,8 @@ export default function Home() {
         <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
         <Card />
         <AboutMe />
-        <Prices />
         <CustomerCases />
+        <Prices />
         <Footer />
       </div>
     </>
