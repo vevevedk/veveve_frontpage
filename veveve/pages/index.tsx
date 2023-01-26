@@ -7,6 +7,7 @@ import { LinkingModel } from "../components/model/LinkModel";
 import Nav from "../components/Nav/Nav";
 import Prices from "../components/Prices/Prices";
 import CustomerCases from "../components/CustomerCases/CustomerCases";
+import AboutMe from "../components/AboutMe/AboutMe";
 
 const Links: LinkingModel[] = [
   new LinkingModel("1", "cases", "#cases"),
@@ -27,6 +28,7 @@ export default function Home() {
       <div className="bg-color-change">
         <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
         <Card />
+        <AboutMe />
         <Prices />
         <CustomerCases />
         <Footer />
