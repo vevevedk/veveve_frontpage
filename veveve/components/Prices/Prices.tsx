@@ -49,7 +49,10 @@ const Prices: React.FC = () => {
               <h2>Beskrivelse af priser</h2>
               <div className={style.content}>
                 {price.map((prices) => (
-                  <div key={prices.id} className={`${style.cards} card`}>
+                  <div
+                    key={prices.price + prices.id}
+                    className={`${style.cards} card`}
+                  >
                     <div className={style.priceBox}>
                       <h3 className={style.price}>Dkk {prices.price}/Måned </h3>
                       <p className={style.smallText}> Dkk ex moms</p>
@@ -57,7 +60,10 @@ const Prices: React.FC = () => {
                     <div className={style.textBox}>
                       <h3> {prices.title}</h3>
                       {prices.servicesIncluded.map((service) => (
-                        <ul key={prices.id} className={style.inc}>
+                        <ul
+                          key={prices.title + prices.id}
+                          className={style.inc}
+                        >
                           <li>
                             <p> {service}</p>
                           </li>
@@ -90,7 +96,7 @@ const Prices: React.FC = () => {
                     className={`${style.tabButton} ${
                       activeTab === prices.title ? style.activeTabButton : ""
                     }`}
-                    key={prices.id}
+                    key={prices.price + prices.id}
                     onClick={() => handleTabClick(prices.title)}
                   >
                     <h3 className={style.title}>{prices.title}</h3>
@@ -100,14 +106,17 @@ const Prices: React.FC = () => {
               <div className={style.content}>
                 {price.map((prices) => (
                   <div
-                    key={prices.id}
+                    key={prices.title + prices.id}
                     className={
                       activeTab === prices.title ? "" : style.inactiveTab
                     }
                   >
                     <h3> {prices.title}</h3>
                     {prices.servicesIncluded.map((service) => (
-                      <ul key={prices.id} className={style.inc}>
+                      <ul
+                        key={prices.title + prices.id + service}
+                        className={style.inc}
+                      >
                         <li>
                           <p> {service}</p>
                         </li>

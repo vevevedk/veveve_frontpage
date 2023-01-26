@@ -15,7 +15,7 @@ const MobileNav: React.FC<Props> = ({ links }) => {
       <ul className={`${styles.links} ${isOpen ? styles.open : ""}`}>
         {links.map((link, index) => (
           <li
-            key={link.id}
+            key={link.name + link.id}
             className={index === links.length - 1 ? styles.lastLink : "link"}
           >
             <a href={link.idtojump} className={styles.link}>

@@ -19,7 +19,7 @@ const MyComponent: React.FC = () => {
       <h2> Beskrivelse af services </h2>
       <div className={style.CardContainer}>
         {cards.map((service) => (
-          <div key={service.id} className={style.Card}>
+          <div key={service.title + service.id} className={style.Card}>
             <h3 className={style.header2}>
               {service.title.split(" ").slice(0, 10).join(" ")}
             </h3>
