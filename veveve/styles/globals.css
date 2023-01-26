@@ -1,6 +1,7 @@
 :root {
   --orange: #ff9101;
   --blue: #004658;
+  --overlay: rgba(0, 70, 88, 0.75);
   --white: #fff;
   --black: #252525;
   --rounded1: 16px;
