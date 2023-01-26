@@ -52,17 +52,22 @@ const CTAButton: React.FC<CTA> = ({ stil, tekst, popup }) => {
     [isOpen]
   );
 
-  useEffect(() => {
-    if (isOpen) {
-      document.documentElement.style.overflow = "hidden";
-      document.body.addEventListener("touchmove", preventScrolling, {
-        passive: false,
-      });
-    } else {
-      document.documentElement.style.overflow = "auto";
-      document.body.removeEventListener("touchmove", preventScrolling);
-    }
-  }, [isOpen, preventScrolling]);
+ useEffect(() => {
+   if (isOpen) {
+     document.documentElement.style.overflow = "hidden";
+     document.body.addEventListener("touchmove", preventScrolling, {
+       passive: false,
+     });
+   } else {
+     document.documentElement.style.overflow = "auto";
+     document.body.removeEventListener("touchmove", preventScrolling);
+   }
+   return () => {
+     document.documentElement.style.overflow = "auto";
+     document.body.removeEventListener("touchmove", preventScrolling);
+   };
+ }, [isOpen, preventScrolling]);
+
 
   function ShowModal() {
     if (isOpen) {
