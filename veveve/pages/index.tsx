@@ -9,8 +9,11 @@ import Prices from "../components/Prices/Prices";
 import CustomerCases from "../components/CustomerCases/CustomerCases";
 
 const Links: LinkingModel[] = [
-  new LinkingModel("1", "cases", "#cases"),
-  new LinkingModel("2", "priser", "#blabla"),
+  new LinkingModel("1", "Beskrivelse af services", "#specs"),
+  new LinkingModel("2", "Hvem er jeg", "#blabla"),
+  new LinkingModel("2", "kunde cases", "#blabla"),
+  new LinkingModel("2", "Priser", "#blabla"),
+  new LinkingModel("2", "Kontakt", "#blabla"),
 ];
 
 export default function Home() {
