@@ -11,53 +11,37 @@ export default function handler(
       1,
       "tintin butikken",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 2403238%",
-      "fdsfs",
-      "grtrreds"
+      ["SEO 325%", "Profit 2403238%", "fdsfs", "grtrreds"]
     ),
     new CustomerCasesData(
       2,
       "test2",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 240%",
-      "fdsfs",
-      "grtrresdkpwoeruwpds"
+      ["SEO 325%", "Profit 240%", "fdsfs", "grtrresdkpwoeruwpds"]
     ),
     new CustomerCasesData(
       3,
       "test3",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 240%",
-      "fdsfs",
-      "grtrreds"
+      ["SEO 325%", "Profit 240%", "fdsfs", "grtrreds"]
     ),
     new CustomerCasesData(
       4,
       "test4",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 240%",
-      "fdsfs",
-      "grtrreds"
+      ["SEO 325%", "Profit 240%", "fdsfs", "grtrreds"]
     ),
     new CustomerCasesData(
       5,
       "test5",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 240%"
+      ["SEO 325%", "Profit 240%"]
     ),
     new CustomerCasesData(
       6,
       "test6",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/CustomerCases/tintin.jpg",
-      "SEO 325%",
-      "Profit 240%",
-      "fdsfs",
-      "grtrreds"
+      ["SEO 325%", "Profit 240%", "fdsfs", "grtrreds"]
     ),
   ];
 

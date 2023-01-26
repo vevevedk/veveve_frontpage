@@ -29,11 +29,11 @@ const MyComponent: React.FC = () => {
           >
             <h3>{Services.title}</h3>
             <div className={styles.overlay}>
+              <p>→</p>
               <div className={styles.content}>
-                <h4>{Services.line1}</h4>
-                <h4>{Services.line2}</h4>
-                <h4>{Services.line3}</h4>
-                <h4>{Services.line4}</h4>
+                {Services.stats.map((stat) => (
+                  <h4>{stat}</h4>
+                ))}
               </div>
             </div>
           </div>

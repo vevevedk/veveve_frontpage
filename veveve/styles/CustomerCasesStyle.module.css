@@ -88,6 +88,21 @@
   width: 115px;
 }
 
+.overlay > p {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  font-size: 24px;
+}
+
+.Cases:hover > .overlay p {
+  transform: skew(15deg) scaleX(-1);
+}
+
+.Cases:not(:hover) > .overlay p {
+  transform: skew(15deg) scaleX(1);
+}
+
 @media screen and (min-width: 1100px) {
   .CustomerCases {
     min-height: 800px;
