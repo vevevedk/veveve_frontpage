@@ -20,9 +20,10 @@ const MyComponent: React.FC = () => {
           <div
             key={Services.id}
             style={{
-              backgroundImage: `url(${Services.img})`,
+              backgroundImage: `linear-gradient(black, black), url(${Services.img})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
+              backgroundBlendMode: "saturation",
             }}
             className={styles.Cases}
           >
