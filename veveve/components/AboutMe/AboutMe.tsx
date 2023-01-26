@@ -13,12 +13,13 @@ const MyComponent: React.FC = () => {
 
   return (
     <div className={styles.AboutMe}>
-      <h2> Hvem er jeg? </h2>
-      <div className={styles.CasesContainer}>
+      <div className={styles.AboutMeContainer}>
+        <h2> Hvem er jeg? </h2>
+
         {cases.map((content) => (
           <div className={styles.AboutMeContent} key={"aboutme" + content.id}>
             {content.breadtext.map((btext) => (
-              <div>{btext}</div>
+              <div key={btext}>{btext}</div>
             ))}
             <h3 className={styles.AboutMeImg}>{content.img}</h3>
           </div>

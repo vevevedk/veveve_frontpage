@@ -1,0 +1,9 @@
+.AboutMe {
+  background-color: var(--gray);
+  padding: 20px;
+}
+
+.AboutMeContainer {
+  background-color: var(--white);
+  border-radius: var(--rounded1);
+}
