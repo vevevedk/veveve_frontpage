@@ -2,7 +2,6 @@
   width: 100vw;
   background: var(--blue);
   display: flex;
-  padding: 15px 0;
 }
 .logo {
   margin-left: 15px;

@@ -15,7 +15,7 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className={style.BGblue}>
+    <div id="specs" className={style.BGblue}>
       <h2> Beskrivelse af services </h2>
       <div className={style.CardContainer}>
         {cards.map((service) => (
