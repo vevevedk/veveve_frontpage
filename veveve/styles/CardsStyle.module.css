@@ -1,5 +1,7 @@
-.BGblue {
-  padding: 20px;
+.wrapper {
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .BGblue h2 {
