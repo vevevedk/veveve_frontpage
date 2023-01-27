@@ -59,7 +59,6 @@
 
 .img {
   width: 20%;
-  border: 2px solid red;
 }
 
 @media screen and (min-width: 600px) {
