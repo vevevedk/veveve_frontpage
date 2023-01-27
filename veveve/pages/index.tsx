@@ -31,7 +31,7 @@ export default function Home() {
       <div className="bg-color-change">
         <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
         <Services />
-        <Card />
+
         <AboutMe />
         <CustomerCases />
         <Prices />
