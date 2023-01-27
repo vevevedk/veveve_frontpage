@@ -12,7 +12,7 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles.AboutMe}>
+    <div id="about" className={styles.AboutMe}>
       <div className={styles.AboutMeContainer}>
         <h2> Hvem er jeg? </h2>
         {cases.map((content) => (

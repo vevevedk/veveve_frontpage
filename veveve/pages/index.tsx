@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/footer/Footer";
 
-import Card from "../components/Card/Card";
+import Services from "../components/Card/Card";
 import Hero from "../components/HeroSection/Hero";
 import { LinkingModel } from "../components/model/LinkModel";
 import Nav from "../components/Nav/Nav";
@@ -10,8 +10,11 @@ import CustomerCases from "../components/CustomerCases/CustomerCases";
 import AboutMe from "../components/AboutMe/AboutMe";
 
 const Links: LinkingModel[] = [
-  new LinkingModel("1", "cases", "#cases"),
-  new LinkingModel("2", "priser", "#blabla"),
+  new LinkingModel("1", "Beskrivelse af services", "#specs"),
+  new LinkingModel("2", "Hvem er jeg", "#about"),
+  new LinkingModel("3", "kunde cases", "#cases"),
+  new LinkingModel("4", "Priser", "#prices"),
+  new LinkingModel("5", "Kontakt", "#contact"),
 ];
 
 export default function Home() {
@@ -27,7 +30,7 @@ export default function Home() {
       <Nav links={Links} />
       <div className="bg-color-change">
         <Hero title="Jeg er ikke google premium partner, fordi jeg ikke arbejder for google jeg arbejder for jer" />
-        <Card />
+        <Services />
         <AboutMe />
         <CustomerCases />
         <Prices />
