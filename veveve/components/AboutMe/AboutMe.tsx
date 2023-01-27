@@ -12,8 +12,8 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div id="about" className={styles.AboutMe}>
-      <div className={`${styles.AboutMeContainer} ${styles.wrapper}`}>
+    <div id="about" className={`${styles.AboutMe} ${styles.wrapper}`}>
+      <div className={`${styles.AboutMeContainer} `}>
         <h2> Hvem er jeg? </h2>
         {cases.map((content) => (
           <div
