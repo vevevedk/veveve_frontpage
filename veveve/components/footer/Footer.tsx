@@ -7,7 +7,7 @@ import FooterSome from "./controller/FooterSome";
 
 export default function Footer() {
   return (
-    <div className={Style.Footer}>
+    <div id="contact" className={Style.Footer}>
       <div className={Style.Logo}>
         <Image src={VeVeVeLogo} alt="Logo of VeVeVe" />
       </div>

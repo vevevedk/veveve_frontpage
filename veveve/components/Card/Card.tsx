@@ -15,7 +15,7 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className={style.BGblue}>
+    <div id="specs" className={style.BGblue}>
       <h2> Beskrivelse af services </h2>
       <div className={style.CardContainer}>
         {cards.map((service) => (
@@ -36,18 +36,18 @@ const MyComponent: React.FC = () => {
             <div className={style.popUp}>
               <p>{service.extra}</p>
             </div>
-
-            <CTA
-              stil={stil.blue}
-              tekst={tekst.kontakt}
-              popup={
-                <div>
-                  {" "}
-                  <h3> {service.title}</h3>
-                  {service.description}
-                </div>
-              }
-            />
+            <div className={style.cta}>
+              <CTA
+                stil={stil.blue}
+                tekst={tekst.kontakt}
+                popup={
+                  <div>
+                    <h3> {service.title}</h3>
+                    {service.description}
+                  </div>
+                }
+              />
+            </div>
           </div>
         ))}
       </div>
