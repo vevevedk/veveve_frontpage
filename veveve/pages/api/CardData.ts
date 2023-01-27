@@ -9,43 +9,27 @@ export default function handler(
   let service: ServicesData[] = [
     new ServicesData(
       1,
-      "John Doe",
+      "Opsætning & optimering af Google Ads kampagner",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/dice.png",
-      "BLABLA",
-      "HER ER EKSTRasd asdasd asd asda sd asd ak km m iopm oim oimA"
+      "For at kunne opnå bedre resultater med Google Ads kampagner, skal vi have de rigtige kampagner sat op. Der skal styr på keyword kampagner for search, og shopping kampagner for dynamiske produktannoncer. \n\n Når det basale setup er på plads skifter fokus til optimeringsarbejdet, hvor kampagnerne i højere grad bliver optimeret mod den enkelte kundes behov."
     ),
     new ServicesData(
       2,
-      "Jane Smith",
+      "Budgethåndtering og rapportering",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
-      "MEREBLABLA",
-      "Jaad asd asdma soidmoasm domsadoasmdo msado imaaa"
+      "For hver måned bliver vi enige om hvad det forventede månedlige budget skal være per Google Ads konto, samt det forventede resultat. Ud fra det laver vi løbende rapportering, så du er informeret hvis der sker udsving."
     ),
     new ServicesData(
       3,
-      "Bob Johnson",
+      "Analyse og indsigter",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
-      "FORMEGETBLABLA",
-      "her kan være der er noget med noget der er"
+      "Ved hjælp af data udtræk fra Google Ads, og andre Google platforme såsom Google Merchant Center, Google Search Console, kan man danne mange værdifulde indsigter, som kan være værdifulde til at danne nye strategier for hvordan det overordnede setup kan optimeres. Ikke kun for Google Ads delen, men også hvordan specifikke produkter, og eller kategorier kan optimeres."
     ),
     new ServicesData(
       4,
-      "Bob Johnson",
+      "Sparring og evaluering",
       "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
-      "FORMEGETBLABLA",
-      "s9ajdasoidjasoidjaoisjdoaisjd aoisdj asoidj aosidj aoisdj"
-    ),
-    new ServicesData(
-      5,
-      "Bob Johnson",
-      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
-      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?`
-    ),
-    new ServicesData(
-      6,
-      "Bob Johnson",
-      "https://veveve-bucket.fra1.digitaloceanspaces.com/ServicesImages/home.png",
-      `Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?Life finds a way. Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the clock is ticking. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Did he just throw my cat out of the window?`
+      "Et samarbejde omkring opsætning og optimering af Google Ads kampagner har typisk et ret lang tidshorisont, da det tager en del tid før man rigtig får udnyttet det potentiale der ligger i samarbejdet. Derfor er løbende sparing og evaluering en fast del af vores samarbejde med kunder, for at holde øje med at vi er på vej i den rigtige retning."
     ),
   ];
 
