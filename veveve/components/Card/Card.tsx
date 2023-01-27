@@ -36,18 +36,18 @@ const MyComponent: React.FC = () => {
             <div className={style.popUp}>
               <p>{service.extra}</p>
             </div>
-
-            <CTA
-              stil={stil.blue}
-              tekst={tekst.kontakt}
-              popup={
-                <div>
-                  {" "}
-                  <h3> {service.title}</h3>
-                  {service.description}
-                </div>
-              }
-            />
+            <div className={style.cta}>
+              <CTA
+                stil={stil.blue}
+                tekst={tekst.kontakt}
+                popup={
+                  <div>
+                    <h3> {service.title}</h3>
+                    {service.description}
+                  </div>
+                }
+              />
+            </div>
           </div>
         ))}
       </div>
