@@ -1,3 +1,9 @@
+.wrapper {
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .CustomerCases {
   min-height: 400px;
 }
@@ -113,7 +119,6 @@
   }
 
   .CasesContainer {
-    width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

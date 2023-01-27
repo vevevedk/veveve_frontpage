@@ -12,11 +12,14 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div id="about" className={styles.AboutMe}>
-      <div className={styles.AboutMeContainer}>
+    <div id="about" className={`${styles.AboutMe} `}>
+      <div className={`${styles.AboutMeContainer} ${styles.wrapper}`}>
         <h2> Hvem er jeg? </h2>
         {cases.map((content) => (
-          <div className={styles.AboutMeContent} key={"aboutme" + content.id}>
+          <div
+            className={`${styles.AboutMeContent}`}
+            key={"aboutme" + content.id}
+          >
             <div className={styles.AboutMeText}>
               {content.breadtext.map((btext) => (
                 <p key={btext}>{btext}</p>
