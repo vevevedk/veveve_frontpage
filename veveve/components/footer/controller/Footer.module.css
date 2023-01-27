@@ -4,6 +4,13 @@
   flex-direction: column;
   align-items: center;
 }
+.Footer a {
+  cursor: pointer;
+}
+
+.Footer a:hover {
+  color: var(--orange);
+}
 
 .Info {
   color: var(--white);
@@ -12,14 +19,14 @@
 }
 
 .FooterInfo {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .FooterInfo h1 {
   color: var(--white);
 }
 .Logo img {
-  padding: 50px 0 50px 0;
+  padding: 25px 0 10px 0;
   max-width: 80vw;
 }
 
@@ -33,11 +40,8 @@
     font-size: 1rem;
   }
   .Logo img {
-    padding: 100px 0 100px 0;
+    padding: 50px 0 0px 0;
     max-width: 80vw;
-  }
-  .FooterInfo {
-    padding-bottom: 100px;
   }
 }
 
@@ -48,10 +52,7 @@
     justify-content: space-around;
   }
   .Logo img {
-    padding: 100px 0 100px 0;
+    padding: 50px 0 25px 0;
     max-width: 80vw;
-  }
-  .FooterInfo {
-    padding-bottom: 100px;
   }
 }

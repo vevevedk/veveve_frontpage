@@ -2,9 +2,9 @@ import Style from "./Footer.module.css";
 import { SoMe } from "../../model/FooterModel";
 
 let some: SoMe[] = [
-  new SoMe(1, "https://www.facebook.dk", "Facebook"),
-  new SoMe(2, "https://www.Twitter.com", "Twitter"),
-  new SoMe(3, "https://www.instagram", "Instagram"),
+  new SoMe(1, "http://www.facebook.dk", "Facebook"),
+  new SoMe(2, "http://www.Twitter.com", "Twitter"),
+  new SoMe(3, "http://www.instagram", "Instagram"),
 ];
 
 const FooterSome: React.FC = ({}) => {
