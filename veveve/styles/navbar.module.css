@@ -18,15 +18,19 @@
 }
 
 /* Default state of the links when menu is closed */
+.listWrapper {
+  overflow-x: hidden;
+}
+
 .links {
   display: none;
-  border-bottom-left-radius: 26px;
-  border-bottom-right-radius: 26px;
+  z-index: 109999;
   position: absolute;
   background-color: var(--blue);
   width: 100%;
-  left: 0;
-  top: 70px;
+  overflow: hidden;
+  right: 0;
+  top: 45px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

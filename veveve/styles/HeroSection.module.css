@@ -1,7 +1,7 @@
 .hero_section {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 62px);
 }
 
 .hero_video {
@@ -14,6 +14,7 @@
 }
 
 .hero_text {
+  text-shadow: 2px 2px var(--black);
   font-size: 20px;
   position: absolute;
   width: 90%;
