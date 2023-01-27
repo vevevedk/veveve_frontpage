@@ -18,13 +18,18 @@
 }
 
 /* Default state of the links when menu is closed */
+.listWrapper {
+  overflow-x: hidden;
+}
+
 .links {
   display: none;
   z-index: 109999;
   position: absolute;
   background-color: var(--blue);
   width: 100%;
-  left: 0;
+  overflow: hidden;
+  right: 0;
   top: 45px;
   display: flex;
   flex-direction: column;
