@@ -18,28 +18,24 @@ const MobileNav: React.FC<Props> = ({ links }) => {
           alt="Logo"
           className={styles.logo}
         />
-        <div>
-          <ul className={`${styles.links} ${isOpen ? styles.open : ""}`}>
-            {links.map((link, index) => (
-              <li
-                key={link.name + link.id}
-                className={
-                  index === links.length - 1 ? styles.lastLink : "link"
-                }
-              >
-                <a href={link.idtojump} className={styles.link}>
-                  <h3>{link.name}</h3>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
         <button
           className={styles.menuButton}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? "☰" : "✖"}
         </button>
+        <ul className={`${styles.links} ${isOpen ? styles.open : ""}`}>
+          {links.map((link, index) => (
+            <li
+              key={link.name + link.id}
+              className={index === links.length - 1 ? styles.lastLink : "link"}
+            >
+              <a href={link.idtojump} className={styles.link}>
+                <h3 className={styles.LinkName }>{link.name}</h3>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

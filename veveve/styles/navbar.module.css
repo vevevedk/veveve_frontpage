@@ -49,10 +49,6 @@
   font-size: 45px;
   color: var(--orange);
 }
-
-.links.open li {
-}
-
 .link {
   font-size: large;
   color: var(--white);
@@ -67,15 +63,24 @@
 }
 
 /* Media query for switching to burger menu */
-@media (min-width: 500px) {
-  .links {
-    flex-direction: row;
-  }
-
+@media (min-width: 700px) {
   .menuButton {
     display: none;
   }
   .links.open {
-    display: block;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .logo {
+    margin-left: 15px;
+    width: 30%;
+  }
+  .LinkName {
+    padding: 0 20px 0 20px;
   }
 }

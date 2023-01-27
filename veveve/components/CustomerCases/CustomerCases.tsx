@@ -13,7 +13,7 @@ const MyComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles.CustomerCases}>
+    <div id="contact" className={styles.CustomerCases}>
       <h2> Kunde Cases </h2>
       <div className={styles.CasesContainer}>
         {cases.map((Services) => (
