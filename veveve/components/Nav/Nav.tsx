@@ -14,7 +14,7 @@ const MobileNav: React.FC<Props> = ({ links }) => {
       <div className={styles.navFlex}>
         {" "}
         <img
-          src="https://veveve-bucket.fra1.digitaloceanspaces.com/Icons/logo.svg"
+          src="https://veveve-bucket-2.fra1.digitaloceanspaces.com/Icons/logo.svg"
           alt="Logo"
           className={styles.logo}
         />

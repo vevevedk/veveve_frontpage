@@ -11,7 +11,7 @@
 
 .AboutMeContainer {
   background-color: var(--white);
-  background-image: url("https://veveve-bucket.fra1.digitaloceanspaces.com/AboutMe/AboutMebackground.svg");
+  background-image: url("https://veveve-bucket-2.fra1.digitaloceanspaces.com/AboutMe/AboutMebackground.svg");
   background-position: center;
   border-radius: var(--rounded1);
   padding: 20px;

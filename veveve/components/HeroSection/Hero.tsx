@@ -11,7 +11,7 @@ const Hero = (props: HeroProps) => {
 
   useEffect(() => {
     setVideoUrl(
-      "https://veveve-bucket.fra1.digitaloceanspaces.com/Untitled.mp4"
+      "https://veveve-bucket-2.fra1.digitaloceanspaces.com/Untitled.mp4"
     );
   }, []);
 
